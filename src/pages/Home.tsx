@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { ChevronRight, MapPin, Star, Calendar, Users, Shield } from "lucide-react";
+import { ChevronRight, MapPin, Star, Calendar, Users, Shield, Phone } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const testimonials = [
