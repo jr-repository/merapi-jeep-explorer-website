@@ -6,63 +6,118 @@ import { Card } from "@/components/ui/card";
 const tourPackages = [
   {
     id: 1,
-    title: "Merapi Sunrise Tour",
-    image: "/asset/tour-1.jpg",
-    duration: "4 jam",
-    price: "Rp 500.000",
-    description: "Nikmati keindahan matahari terbit dari lereng Merapi dengan pemandangan yang spektakuler.",
-    features: [
-      "Penjemputan hotel di sekitar Yogyakarta",
-      "Sunrise viewpoint di Bukit Klangon",
-      "Kunjungan ke Museum Sisa Hartaku",
-      "Kunjungan ke Bunker Kaliadem",
-      "Jeep berkapasitas 4 orang",
-      "Guide lokal yang berpengalaman",
-      "Sarapan tradisional",
+    title: "EXPLORE KALIURANG",
+    price: "Rp 400.000",
+    duration: "1,5 Jam",
+    routes: [
+      "Omah Putih",
+      "Nawang Jagad",
+      "Lorong Oksigen",
+      "Track Air"
     ],
-    startTime: "03:30 WIB",
-    endTime: "07:30 WIB",
-    icon: <Sunrise className="w-8 h-8 text-merapi-500" />,
+    icon: <Mountain className="w-6 h-6 text-merapi-500" />,
   },
   {
     id: 2,
-    title: "Merapi Lava Tour",
-    image: "/asset/tour-2.jpg",
-    duration: "3 jam",
+    title: "PAKET 1",
     price: "Rp 400.000",
-    description: "Menjelajahi jejak sisa letusan Merapi 2010 dan menyaksikan keindahan alamnya.",
-    features: [
-      "Penjemputan hotel di sekitar Yogyakarta",
-      "Kunjungan ke Alien Stone",
-      "Kunjungan ke Bunker Kaliadem",
-      "Kunjungan ke desa terdampak letusan",
-      "Jeep berkapasitas 4 orang",
-      "Guide lokal yang berpengalaman",
-      "Air mineral",
+    duration: "1,5 Jam",
+    routes: [
+      "Musium Mini",
+      "Batu Alien",
+      "TLWP / Stonehage",
+      "Track Air"
     ],
-    startTime: "09:00 WIB",
-    endTime: "12:00 WIB",
-    icon: <Mountain className="w-8 h-8 text-merapi-500" />,
+    icon: <Mountain className="w-6 h-6 text-merapi-500" />,
   },
   {
     id: 3,
-    title: "Merapi Sunset Tour",
-    image: "/asset/tour-3.jpg",
-    duration: "4 jam",
-    price: "Rp 550.000",
-    description: "Nikmati keindahan matahari terbenam dengan latar Gunung Merapi yang megah.",
-    features: [
-      "Penjemputan hotel di sekitar Yogyakarta",
-      "Sunset viewpoint di Bukit Klangon",
-      "Kunjungan ke Museum Sisa Hartaku",
-      "Kunjungan ke area pasir berbisik",
-      "Jeep berkapasitas 4 orang",
-      "Guide lokal yang berpengalaman",
-      "Camilan tradisional",
+    title: "PAKET 2 A",
+    price: "Rp 450.000",
+    duration: "2 Jam",
+    routes: [
+      "Musium Mini",
+      "Batu Alien",
+      "TLWP",
+      "Bunker Kaliadem",
+      "Tebing Gendol",
+      "Track Air"
     ],
-    startTime: "15:00 WIB",
-    endTime: "19:00 WIB",
-    icon: <Sunset className="w-8 h-8 text-merapi-500" />,
+    icon: <Mountain className="w-6 h-6 text-merapi-500" />,
+  },
+  {
+    id: 4,
+    title: "PAKET 2 B",
+    price: "Rp 450.000",
+    duration: "2 Jam",
+    routes: [
+      "Petilasan Mbah Marijan",
+      "Bunker Kaliadem",
+      "Musium Mini",
+      "Track Air"
+    ],
+    icon: <Mountain className="w-6 h-6 text-merapi-500" />,
+  },
+  {
+    id: 5,
+    title: "PAKET 3",
+    price: "Rp 550.000",
+    duration: "2,5 - 3 Jam",
+    routes: [
+      "Petilasan Mbah Marijan",
+      "Bunker Kaliadem",
+      "Batu Alien",
+      "TLWP / Tebing Gendol Merapi",
+      "Musium Mini",
+      "Track Air"
+    ],
+    icon: <Mountain className="w-6 h-6 text-merapi-500" />,
+  },
+  {
+    id: 6,
+    title: "PAKET 4",
+    price: "Rp 650.000",
+    duration: "4 Jam",
+    routes: [
+      "Petilasan Mbah Marijan",
+      "Bunker Kaliadem",
+      "Batu Alien",
+      "The Lost World Castle",
+      "Musium Mini",
+      "Track Air"
+    ],
+    icon: <Mountain className="w-6 h-6 text-merapi-500" />,
+  },
+  {
+    id: 7,
+    title: "PAKET 5",
+    price: "Rp 900.000",
+    duration: "4,5 - 5 Jam",
+    routes: [
+      "Hutan Kinongan / Tears Merapi",
+      "Musium Mini",
+      "Petilasan Mbah Marijan",
+      "Bunker Kaliadem",
+      "Batu Alien",
+      "The Lost World Park",
+      "Track Air"
+    ],
+    icon: <Mountain className="w-6 h-6 text-merapi-500" />,
+  },
+  {
+    id: 8,
+    title: "SUNRISE",
+    price: "Rp 500.000",
+    duration: "2 Jam",
+    routes: [
+      "Petilasan Mbah Marijan",
+      "Bunker Kaliadem",
+      "Tebing Gendol Merapi",
+      "Batu Alien / TLWP",
+      "Musium Mini",
+      "Track Air"
+    ],
+    icon: <Sunrise className="w-6 h-6 text-merapi-500" />,
   },
 ];
 
@@ -122,60 +177,41 @@ const Services = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {tourPackages.map((tour) => (
-              <Card key={tour.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <div className="relative h-48">
-                  <img 
-                    src={tour.image} 
-                    alt={tour.title} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-start justify-between mb-4">
-                    <div>
-                      <h3 className="text-xl font-bold text-merapi-800">{tour.title}</h3>
-                      <div className="flex items-center mt-1">
-                        <Clock className="h-4 w-4 text-merapi-600 mr-1" />
-                        <span className="text-sm text-merapi-600">{tour.duration}</span>
-                      </div>
-                    </div>
+              <Card key={tour.id} className="overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div className="p-4">
+                  <div className="flex items-center justify-between mb-3">
+                    <h3 className="text-lg font-bold text-merapi-800">{tour.title}</h3>
                     <div>
                       {tour.icon}
                     </div>
                   </div>
                   
-                  <p className="text-merapi-700 mb-4">{tour.description}</p>
-                  
-                  <div className="mb-4">
-                    <h4 className="font-medium text-merapi-800 mb-2">Jam Operasional:</h4>
-                    <div className="flex items-center justify-between text-sm text-merapi-600">
-                      <span>Start: {tour.startTime}</span>
-                      <span>End: {tour.endTime}</span>
+                  <div className="flex items-center justify-between mb-3">
+                    <p className="text-lg font-bold text-merapi-700">{tour.price}</p>
+                    <div className="flex items-center text-sm text-merapi-600">
+                      <Clock className="h-4 w-4 text-merapi-500 mr-1" />
+                      <span>{tour.duration}</span>
                     </div>
                   </div>
                   
-                  <div className="mb-6">
-                    <h4 className="font-medium text-merapi-800 mb-2">Fasilitas:</h4>
+                  <div className="mb-4">
+                    <h4 className="font-medium text-merapi-800 text-sm mb-2">Rute:</h4>
                     <ul className="space-y-1">
-                      {tour.features.slice(0, 4).map((feature, idx) => (
+                      {tour.routes.map((route, idx) => (
                         <li key={idx} className="flex items-start text-sm">
-                          <Check className="h-4 w-4 text-merapi-500 mr-2 flex-shrink-0 mt-0.5" />
-                          <span className="text-merapi-700">{feature}</span>
+                          <Check className="h-3.5 w-3.5 text-merapi-500 mr-1.5 flex-shrink-0 mt-0.5" />
+                          <span className="text-merapi-700">{route}</span>
                         </li>
                       ))}
-                      {tour.features.length > 4 && (
-                        <li className="text-sm text-merapi-600">+ {tour.features.length - 4} more...</li>
-                      )}
                     </ul>
                   </div>
                   
-                  <div className="flex items-center justify-between">
-                    <p className="text-lg font-bold text-merapi-800">{tour.price}</p>
+                  <div className="text-center mt-4">
                     <Link
                       to={`/portfolio/${tour.id}`}
-                      className="bg-merapi-600 text-white px-4 py-2 rounded hover:bg-merapi-700 transition-colors"
+                      className="bg-merapi-600 text-white px-4 py-1.5 text-sm rounded hover:bg-merapi-700 transition-colors w-full inline-block"
                     >
                       Lihat Detail
                     </Link>
@@ -289,3 +325,4 @@ const Services = () => {
 };
 
 export default Services;
+
